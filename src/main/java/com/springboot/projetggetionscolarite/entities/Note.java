@@ -10,15 +10,15 @@ public class Note {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private double valeur; // The score value
+    private double valeur;
 
     @ManyToOne
     @JoinColumn(name = "matiere_id")
-    private Matiere matiere; // Subject for which the note was given
+    private Matiere matiere;
 
     @ManyToOne
     @JoinColumn(name = "etudiant_id")
-    private Etudiant etudiant; // Student who received the note
+    private Etudiant etudiant;
 
     public Long getId() {
         return id;

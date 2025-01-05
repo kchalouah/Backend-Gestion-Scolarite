@@ -1,4 +1,4 @@
-package com.springboot.projetggetionscolarite.entities;
+/*package com.springboot.projetggetionscolarite.entities;
 
 public class LoginRequest {
     private String email;
@@ -21,3 +21,4 @@ public class LoginRequest {
         this.password = password;
     }
 }
+*/

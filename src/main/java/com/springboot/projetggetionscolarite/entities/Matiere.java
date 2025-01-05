@@ -1,5 +1,6 @@
 package com.springboot.projetggetionscolarite.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -10,13 +11,14 @@ public class Matiere {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String code; // Unique identifier for the subject
-    private String nom; // Subject name
-    private int coefficient; // Coefficient of the subject
+    private String code;
+    private String nom;
+    private int coefficient;
 
     @ManyToOne
     @JoinColumn(name = "enseignant_id")
-    private Enseignant enseignant; // Assigned Enseignant for the subject
+    @JsonBackReference
+    private Enseignant enseignant;
 
     public Long getId() {
         return id;

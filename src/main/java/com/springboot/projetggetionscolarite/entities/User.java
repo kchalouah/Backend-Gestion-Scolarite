@@ -15,7 +15,6 @@ public abstract class User {
 
     private String nom;
     private String prenom;
-    private String username;
     private String motDePasse;
     private String role;
 
@@ -70,11 +69,5 @@ public abstract class User {
         this.email = email;
     }
 
-    public String getUsername() {
-        return username;
-    }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
 }

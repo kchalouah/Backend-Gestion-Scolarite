@@ -6,5 +6,5 @@ import lombok.Data;
 @Entity
 @Data
 public class AgentAdministratif extends User {
-    // Additional administrative fields if necessary
+
 }

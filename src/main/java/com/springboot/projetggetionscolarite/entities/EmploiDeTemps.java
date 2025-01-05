@@ -10,16 +10,16 @@ public class EmploiDeTemps {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String jour; // Day of the week (e.g., "Lundi")
-    private String heure; // Time (e.g., "10:00 AM")
+    private String jour;
+    private String heure;
 
     @ManyToOne
     @JoinColumn(name = "matiere_id")
-    private Matiere matiere; // Subject being taught during this time slot
+    private Matiere matiere;
 
     @ManyToOne
     @JoinColumn(name = "classe_id")
-    private Classe classe; // Class assigned to this timetable
+    private Classe classe;
 
     public Long getId() {
         return id;

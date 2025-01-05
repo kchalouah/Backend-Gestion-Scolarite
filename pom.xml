@@ -36,18 +36,9 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Spring Boot Starter Security (Authentication and authorization) -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
 
-        <!-- JSON Web Token (JWT) -->
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt-api</artifactId>
-            <version>0.11.5</version>
-        </dependency>
+
+
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-impl</artifactId>
@@ -89,12 +80,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Spring Security Test (Testing security features) -->
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+
     </dependencies>
 
     <build>

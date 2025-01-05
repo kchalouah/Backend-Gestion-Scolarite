@@ -1,5 +1,4 @@
-package com.springboot.projetggetionscolarite.controllers;
-import com.springboot.projetggetionscolarite.entities.*;
+/*import com.springboot.projetggetionscolarite.entities.*;
 import com.springboot.projetggetionscolarite.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -33,4 +32,4 @@ public class ParentController {
     public void deleteParent(@PathVariable Long id) {
         parentService.deleteParent(id);
     }
-}
+}*/

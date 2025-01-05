@@ -5,5 +5,5 @@ import com.springboot.projetggetionscolarite.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AdministrateurRepository extends JpaRepository<Administrateur, Long> {
-    Administrateur findByUsername(String username); // Exemple de méthode personnalisée
+
 }

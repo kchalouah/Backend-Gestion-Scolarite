@@ -1,4 +1,4 @@
-package com.springboot.projetggetionscolarite.controllers;
+/*package com.springboot.projetggetionscolarite.controllers;
 
 import com.springboot.projetggetionscolarite.entities.LoginRequest;
 import com.springboot.projetggetionscolarite.entities.User;
@@ -26,3 +26,4 @@ public class AuthenticationController {
         return ResponseEntity.ok("Authentication successful for user: " + user.getNom());
     }
 }
+*/

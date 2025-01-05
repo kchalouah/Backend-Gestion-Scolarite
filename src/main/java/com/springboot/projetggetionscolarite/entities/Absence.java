@@ -12,11 +12,11 @@ public class Absence {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private LocalDate date; // Date of the absence
+    private LocalDate date;
 
     @ManyToOne
     @JoinColumn(name = "etudiant_id")
-    private Etudiant etudiant; // Student who was absent
+    private Etudiant etudiant;
 
     public Long getId() {
         return id;

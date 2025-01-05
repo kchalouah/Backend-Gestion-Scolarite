@@ -1,4 +1,4 @@
-package com.springboot.projetggetionscolarite.services;
+/*package com.springboot.projetggetionscolarite.services;
 
 import com.springboot.projetggetionscolarite.entities.Parent;
 import com.springboot.projetggetionscolarite.repositories.ParentRepository;
@@ -29,3 +29,4 @@ public class ParentService {
         parentRepository.deleteById(id);
     }
 }
+*/

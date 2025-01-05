@@ -1,4 +1,4 @@
-package com.springboot.projetggetionscolarite.entities;
+/*package com.springboot.projetggetionscolarite.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -10,7 +10,7 @@ import java.util.List;
 public class Parent extends User {
     @OneToMany
     @JoinColumn(name = "parent_id")
-    private List<Etudiant> enfants; // Children linked to Parent
+    private List<Etudiant> enfants;
 
     public List<Etudiant> getEnfants() {
         return enfants;
@@ -21,3 +21,4 @@ public class Parent extends User {
     }
 
 }
+*/

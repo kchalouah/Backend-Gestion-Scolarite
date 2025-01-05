@@ -10,13 +10,13 @@ import java.util.List;
 public class Etudiant extends User {
     @ManyToOne
     @JoinColumn(name = "classe_id")
-    private Classe classe; // Link to Classe
+    private Classe classe;
 
     @OneToMany(mappedBy = "etudiant", cascade = CascadeType.ALL)
-    private List<Note> notes; // Notes linked to Etudiant
+    private List<Note> notes;
 
     @OneToMany(mappedBy = "etudiant", cascade = CascadeType.ALL)
-    private List<Absence> absences; // Absences linked to Etudiant
+    private List<Absence> absences;
 
     public Classe getClasse() {
         return classe;

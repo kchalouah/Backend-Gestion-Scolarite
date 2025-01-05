@@ -1,5 +1,6 @@
 package com.springboot.projetggetionscolarite.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -12,14 +13,14 @@ public class Classe {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String niveau; // E.g., "1ère Année", "Terminale"
-
+    private String niveau;
+    @JsonManagedReference
     @ManyToOne
     @JoinColumn(name = "enseignant_id")
-    private Enseignant enseignant; // Classe's assigned Enseignant
+    private Enseignant enseignant;
 
     @OneToMany(mappedBy = "classe", cascade = CascadeType.ALL)
-    private List<Etudiant> etudiants; // Students in the class
+    private List<Etudiant> etudiants;
 
     public Long getId() {
         return id;
